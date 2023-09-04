@@ -7,8 +7,8 @@
 * [ [h](https://expressjs.com) ][ w ] Express.js
 * [ [h](https://leafletjs.com) ][ w ] Leaflet.js
 * [ [h](https://nextjs.org) ][ [w](https://en.wikipedia.org/wiki/Next.js) ] Next.js
-* [ [h](https://nodejs.org/) ] Node.js
-* [ [h](https://plotly.com/javascript/) ] Plotly.js
+* [ [h](https://nodejs.org/) ][ w ] Node.js
+* [ [h](https://plotly.com/javascript/) ][ w ] Plotly.js
 * [ h ][ w ] React.js
 * [ [h](https://requirejs.org) ][ w ] Require.js
 * [ [h](https://www.typescriptlang.org) ][ [d](https://www.typescriptlang.org/docs/handbook/intro.html) ] TypeScript
