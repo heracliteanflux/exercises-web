@@ -24,5 +24,7 @@ JavaScript
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) ] Arrow function expression
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) ] `let`
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration) ] Loops and iteration
+* [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) ] `parseFloat()`
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) ] `Promise.prototype.then()`
+* [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) ] `String()`
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) ] Template literals

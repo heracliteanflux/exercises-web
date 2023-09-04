@@ -74,6 +74,85 @@ function buildCharts (sample) {
     });
 }
 
+function buildGauge (wfreq) {
+  let level    = parseFloat(wfreq) * 20; // a washing frequency between 0 and 180
+
+  let degrees  = 180 - level;
+  let radius   = 0.5;
+  let radians  = (degrees * Math.PI) / 180;
+  let x        = radius * Math.cos(radians);
+  let y        = radius * Math.sin(radians);
+
+  let mainPath = 'M -.0 -0.05 L .0 0.05 L ';
+  let pathX    = String(x);
+  let space    = ' ';
+  let pathY    = String(y);
+  let pathEnd  = ' Z';
+  let path     = mainPath.concat(pathX, space, pathY, pathEnd);
+
+  let gaugeLayout = {
+    height : 500,
+    shapes : [{
+      fillcolor : '850000',
+      line      : {color : '850000'},
+      path      : path,
+      type      : 'path',
+    }],
+    title  : '<b>Belly Button Washing Frequency</b><br>Scrubs per Week',
+    width  : 500,
+    xaxis  : {
+      range          : [-1, 1],
+      showgrid       : false,
+      showticklabels : false,
+      zeroline       : false,
+    },
+    yaxis  : {
+      range          : [-1, 1],
+      showgrid       : false,
+      showticklabels : false,
+      zeroline       : false,
+    },
+  };
+  let gaugeData   = [
+    {
+      hoverinfo  : 'text+name',
+      marker     : {color : '850000', size : 12},
+      name       : 'Freq',
+      showlegend : false,
+      text       : level,
+      type       : 'scatter',
+      x          : [0],
+      y          : [0],
+    },
+    {
+      hole         : 0.5,
+      hoverinfo    : 'label',
+      labels       : [ "8-9",  "7-8",  "6-7",  "5-6",  "4-5",  "3-4",  "2-3",  "1-2",  "0-1", ""],
+      marker       : {colors : [
+        "rgba(0, 105, 11, .5)",
+        "rgba(10, 120, 22, .5)",
+        "rgba(14, 127, 0, .5)",
+        "rgba(110, 154, 22, .5)",
+        "rgba(170, 202, 42, .5)",
+        "rgba(202, 209, 95, .5)",
+        "rgba(210, 206, 145, .5)",
+        "rgba(232, 226, 202, .5)",
+        "rgba(240, 230, 215, .5)",
+        "rgba(255, 255, 255, 0)"
+      ]},
+      rotation     : 90,
+      showlegend   : false,
+      text         : [ "8-9",  "7-8",  "6-7",  "5-6",  "4-5",  "3-4",  "2-3",  "1-2",  "0-1", ""],
+      textinfo     : 'text',
+      textposition : 'inside',
+      type         : 'pie',
+      values       : [50 / 9, 50 / 9, 50 / 9, 50 / 9, 50 / 9, 50 / 9, 50 / 9, 50 / 9, 50 / 9, 50],
+    },
+  ];
+  let GAUGE    = document.getElementById('gauge');
+  Plotly.newPlot(GAUGE, gaugeData, gaugeLayout)
+}
+
 function init () {
   let selector = d3.select('#selDataset');
   d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json")
