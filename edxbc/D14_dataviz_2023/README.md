@@ -1,5 +1,7 @@
 # Data visualization with D3.js and Plotly.js
 
+![](img/0.png)
+
 * [ [h](https://getbootstrap.com/) ][ [cdn](https://www.bootstrapcdn.com/) ] Bootstrap
 * [ [h](https://d3js.org/) ][ [cdn](https://d3js.org/d3.v7.min.js) ] D3.js
   * [d3-selection](https://github.com/d3/d3-selection)
