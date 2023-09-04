@@ -11,9 +11,15 @@
   * [d3-request](https://github.com/d3/d3-request/tree/master)
     * [`d3.json`](https://github.com/d3/d3-request/tree/master#json)
 * [ h ][ [cdn](https://plotly.com/javascript/getting-started/) ] Plotly.js
+  * [ [d](https://plotly.com/javascript/bar-charts/) ] Bar Charts in JavaScript
+  * [ [d](https://plotly.com/javascript/bubble-charts/) ] Bubble Charts in JavaScript
+  * [ [d](https://plotly.com/javascript/gauge-charts/) ] Gauge Charts in JavaScript
 
 JavaScript
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) ] `Array.prototype.filter()`
+* [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) ] `Array.prototype.map()`
+* [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) ] `Array.prototype.reverse()`
+* [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) ] `Array.prototype.slice()`
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) ] Array `length`
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) ] Arrow function expression
 * [ [d](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) ] `let`
